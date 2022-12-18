@@ -9,7 +9,7 @@ import java.io.OutputStreamWriter;
 import java.util.Locale;
 public class Main {
     public static void main(String[] args) throws IOException{
-        if(args.length==0||args[0].equals("?")||args[0].equals("-?")||args[0].equals("help")){
+        if(args.length==0||args[0].equals("?")||args[0].equals("-?")||args[0].equals("help")||args[0].equals("-h")||args[0].equals("-help")){
             System.out.println("Please provide two arguments; filepath, and the axes to flip.\nFilepath can be absolute or local, in whatever format java will accept\nAxes can either be (x|y|z) to mirror upon a single axis, or (xy|xz|yz) to flip two axes (rotates it)");
         }
         if(args.length>0&&args.length!=2){
